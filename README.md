@@ -16,52 +16,62 @@ _GitHub Copilot can help you code by offering autocomplete-style suggestions rig
 </header>
 
 <!--
-  <<< Author notes: Step 2 >>>
+  <<< Author notes: Step 4 >>>
   Start this step by acknowledging the previous step.
   Define terms and link to docs.github.com.
 -->
 
-## Step 2: Seeing AI code suggestions in a Javascript file!
+## Step 4: Using comments to generate code with Copilot
 
-_Nice work! :tada: You created a Codespace using a devcontainer file that installed Copilot!_
+_Nicely done utilizing the Copilot tab!_ :partying_face:
 
-GitHub Copilot provides suggestions for numerous languages and a wide variety of frameworks, but works especially well for Python, JavaScript, TypeScript, Ruby, Go, C# and C++. The following samples are in JavaScript, but other languages will work similarly.
+You now have leveraged the Copilot quick tab auto-suggest as well as the Copilot hub to accept AI generated suggestions.
 
-Let's try this out utilizing Javascript for Copilot.
+Now lets see how you can leverage comments to generate Copilot suggestions!
 
-### :keyboard: Activity: Add a Javascript file and start writing code
+### :keyboard: Activity: Pull the latest code to the Codespace repo.
 
-1. From inside the codespace in the VS Code explorer window, create a new file.
+> **Note**
+> Pull MUST be done prior to the next activity.
 
-> **Note**:
-> If you closed the Codespace from above, please open it back up or create a new Codespace.
-
-2. Name the file `skills.js`
-3. Verify your new file looks like:
-   ![Screen Shot 2023-03-09 at 9 21 34 AM](https://user-images.githubusercontent.com/26442605/224105906-d1beb531-b747-4c7a-85ba-a12526488422.png)
-4. In the `skills.js` file, type the following function header.
+1. Use the VS Code terminal to pull the latest code:
 
    ```
-   function calculateNumbers(var1, var2)
+   git pull
    ```
 
-   GitHub Copilot will automatically suggest an entire function body in grayed text. Below is an example of what you'll most likely see, but the exact suggestion may vary.
-   ![Screen Shot 2023-04-27 at 10 23 06 AM](https://user-images.githubusercontent.com/26442605/234941079-b4bf3e9d-fc70-4b20-b74c-0ee753ba344e.png)
+### :keyboard: Activity: Generate Copilot suggested code from comments.
 
-5. Press `Tab` to accept the suggestion.
+1. From inside the codespace in the VS Code explorer window, create a new file. (If you closed the Codespace from above, please open it back up or create a new Codespace.)
+2. Name the file `comments.js`.
+3. Type the following comment into the file:
+   ```
+   // Create web server
+   ```
+4. Press `enter` to go to a new line.
+5. Copilot will suggest a code block.
+6. Hover over the red squiggly and select the `...`
+
+   > **Note**
+   > If you don't see the copilot code block suggestion or the red squiggly and the three dots `...`, you can type `control + enter` to bring up the GitHub Copilot completions panel.
+
+7. Click `Open Completions Panel`. Copilot will synthesise around 10 different code suggestions. You should see something like this:
+   ![Screen Shot 2023-04-25 at 3 59 42 PM](https://user-images.githubusercontent.com/26442605/234425509-74ea96e0-bbd6-417b-84c5-73546ac7b2cd.png)
+8. Find a solution you like and click `Accept Solution`.
+9. Your `comments.js` file will be updated with your solution.
 
 ### :keyboard: Activity: Push code to your repository from the codespace
 
-1. Use the VS Code terminal to add the `skills.js` file to the repository:
+1. Use the VS Code terminal to add the `comments.js` file to the repository:
 
    ```
-   git add skills.js
+   git add comments.js
    ```
 
 2. Next from the VS Code terminal stage and commit the changes to the repository:
 
    ```
-   git commit -m "Copilot first commit"
+   git commit -m "Copilot third commit"
    ```
 
 3. Finally from the VS Code terminal push to code to the repository:
